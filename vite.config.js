@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/grauerdemo2026/',
+  base: process.env.BASE_PATH || '/',
   server: {
     port: 5173,
     open: true,
