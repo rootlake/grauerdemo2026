@@ -1,0 +1,114 @@
+{
+  "dorm": "Grauer Hall",
+  "term": "Spring 2026",
+  "students": [
+    {
+      "id": "stu-001",
+      "firstName": "Maya",
+      "lastName": "Chen",
+      "room": "214",
+      "wing": "East",
+      "year": "Senior",
+      "photoUrl": "/reference/stu-001.jpg"
+    },
+    {
+      "id": "stu-002",
+      "firstName": "Jordan",
+      "lastName": "Okonkwo",
+      "room": "218",
+      "wing": "East",
+      "year": "Junior",
+      "photoUrl": "/reference/stu-002.jpg"
+    },
+    {
+      "id": "stu-003",
+      "firstName": "Sofia",
+      "lastName": "Reyes",
+      "room": "221",
+      "wing": "East",
+      "year": "Sophomore",
+      "photoUrl": "/reference/stu-003.jpg"
+    },
+    {
+      "id": "stu-004",
+      "firstName": "Ethan",
+      "lastName": "Park",
+      "room": "305",
+      "wing": "West",
+      "year": "Senior",
+      "photoUrl": "/reference/stu-004.jpg"
+    },
+    {
+      "id": "stu-005",
+      "firstName": "Amara",
+      "lastName": "Diallo",
+      "room": "309",
+      "wing": "West",
+      "year": "Junior",
+      "photoUrl": "/reference/stu-005.jpg"
+    },
+    {
+      "id": "stu-006",
+      "firstName": "Leo",
+      "lastName": "Martinez",
+      "room": "312",
+      "wing": "West",
+      "year": "Sophomore",
+      "photoUrl": "/reference/stu-006.jpg"
+    },
+    {
+      "id": "stu-007",
+      "firstName": "Priya",
+      "lastName": "Sharma",
+      "room": "402",
+      "wing": "North",
+      "year": "Senior",
+      "photoUrl": "/reference/stu-007.jpg"
+    },
+    {
+      "id": "stu-008",
+      "firstName": "Noah",
+      "lastName": "Fischer",
+      "room": "406",
+      "wing": "North",
+      "year": "Postgrad",
+      "photoUrl": "/reference/stu-008.jpg"
+    },
+    {
+      "id": "stu-009",
+      "firstName": "Zoe",
+      "lastName": "Kim",
+      "room": "410",
+      "wing": "North",
+      "year": "Freshman",
+      "photoUrl": "/reference/stu-009.jpg"
+    },
+    {
+      "id": "stu-010",
+      "firstName": "Marcus",
+      "lastName": "Thompson",
+      "room": "115",
+      "wing": "South",
+      "year": "Junior",
+      "photoUrl": "/reference/stu-010.jpg"
+    },
+    {
+      "id": "stu-011",
+      "firstName": "Isla",
+      "lastName": "MacLeod",
+      "room": "119",
+      "wing": "South",
+      "year": "Sophomore",
+      "photoUrl": "/reference/stu-011.jpg"
+    },
+    {
+      "id": "stu-012",
+      "firstName": "Diego",
+      "lastName": "Santos",
+      "room": "122",
+      "wing": "South",
+      "year": "Freshman",
+      "photoUrl": "/reference/stu-012.jpg"
+    }
+  ]
+}

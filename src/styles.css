@@ -1,0 +1,274 @@
+:root {
+  --bg: #f4f0e8;
+  --bg-panel: #fffdf9;
+  --ink: #1a1714;
+  --ink-muted: #6b645c;
+  --accent: #2d5a4a;
+  --accent-soft: #dceee6;
+  --gold: #c4a35a;
+  --gold-soft: #f3e8cc;
+  --danger: #9b3b3b;
+  --border: rgba(26, 23, 20, 0.08);
+  --shadow: 0 18px 50px rgba(26, 23, 20, 0.08);
+  --radius: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(196, 163, 90, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(45, 90, 74, 0.12), transparent 28%),
+    var(--bg);
+}
+
+.app {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.header-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: #6f5730;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: var(--ink-muted);
+  font-size: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 1.25rem;
+}
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.status-pill {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-loading {
+  background: #eee8dc;
+  color: #6f6458;
+}
+
+.status-ready {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.status-error {
+  background: #f6dede;
+  color: var(--danger);
+}
+
+.video-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  background: #111;
+}
+
+#webcam,
+#overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  pointer-events: none;
+}
+
+.status-text {
+  margin: 0.85rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+}
+
+.match-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent-soft), #f7faf8);
+  border: 1px solid rgba(45, 90, 74, 0.12);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.match-card-hidden {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+}
+
+.match-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 20px rgba(26, 23, 20, 0.12);
+}
+
+.match-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.match-body h3 {
+  margin: 0.15rem 0;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.match-room,
+.match-confidence {
+  margin: 0.15rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.count-badge {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: #6f5730;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.roster-list,
+.history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.roster-item,
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.roster-item:last-child,
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.roster-thumb {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.roster-name,
+.history-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.roster-meta,
+.history-meta {
+  margin: 0.15rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+}
+
+.history-head {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.history-confidence {
+  margin-left: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.history-empty {
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
